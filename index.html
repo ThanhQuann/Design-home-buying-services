@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/font/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
      <!-- Favicon  -->
      <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon">
@@ -30,6 +31,7 @@
 </head>
 <body>
    
+    
         
     <main >
         <div class="flex-sticky">
@@ -57,13 +59,16 @@
         <div class="content">
         <div class="hero">
             <div class="info">
+                <div class="animation" data-aos="fade-right">
+
                 <p class="sub-title">Welcome to Besnik Agency</p>
                 <h1 class="title">Discover a place you'll love to live. </h1>
                 <p class="desc">Get the best real estate deals first,
                     before they hit the mass market! hot foreclousure deals with one simple search.</p>
                 <a href="#!" class="btn hero-more">More About Us</a>
+            </div>
                 <div class="image-hero">
-                    <img class="image-one"src="./assets/img/house illustration.svg" alt="">
+                    <img data-aos="fade-down" class="image-one"src="./assets/img/house illustration.svg" alt="">
                 </div>
             </div>
         </div>
@@ -88,7 +93,7 @@
             <div class="desc">5 Star Ratings (2k+ Review)</div>
     
             </div>
-            <div class="images">
+            <div data-aos="fade-up" class="images">
                 <a href="#!">
 
                     <img src="./assets/img/slack.svg" >
@@ -172,7 +177,7 @@
         <div class="list">
             <div class="item">
 <a href="#!">
-                  <img src="./assets/img/nikko.svg" alt="Nikko Apartments  " class="thumb">
+                  <img data-aos="fade-up" data-aos="fade-up"src="./assets/img/nikko.svg" alt="Nikko Apartments  " class="thumb">
     
 </a>                <div class="body">
                     <h3 class="title"><a href="#!">Nikko Apartments</a></h3>
@@ -189,7 +194,7 @@
         </div>
         <div class="item">
 <a href="#!">
-                <img src="./assets/img/coucou.svg" alt="CouCou Homestead  " class="thumb">
+                <img data-aos="fade-up" src="./assets/img/coucou.svg" alt="CouCou Homestead  " class="thumb">
     
 </a>            <div class="body">
                 <h3 class="title"><a href="#!">CouCou Homestead</a></h3>
@@ -206,7 +211,7 @@
     </div>
     <div class="item">
 <a href="#!">
-            <img src="./assets/img/lavis.svg" alt="Lavis 18 Residence " class="thumb">
+            <img data-aos="fade-up" src="./assets/img/lavis.svg" alt="Lavis 18 Residence " class="thumb">
     
 </a>        <div class="body">
             <h3 class="title"><a href="#!">Lavis 18 Residence</a></h3>
@@ -229,7 +234,7 @@
     <div id="resources" class="stats">
         <div class="content">
             <div class="row">
-            <div class="img-block">
+            <div data-aos="fade-up-right"class="img-block">
                 <img class="image"src="./assets/img/stats.jpg" alt="">
                 <div class="stats-trend">
                     <div class="content">
@@ -310,13 +315,13 @@
     <!-- Subcription -->
     <div id ="contact" class="subcription">
         <div class="content">
-            <div class="body">
+            <div data-aos="flip-down" data-aos-duration="2000" class="body">
                 <div class="info">
                     <div class="sub-title">Subscribe to our Newsletter!</div>
                     <div class="desc">Subscribe to our newsletter and stay updated.</div>
                     <div class="btn">Subscribe</div>
                 </div>
-                <img src="./assets/img/sub.svg" alt="Subscribe to our Newsletter!" class="image">    
+                <img  src="./assets/img/sub.svg" alt="Subscribe to our Newsletter!" class="image">    
             </div>
         </div>
     </div>
@@ -406,6 +411,14 @@
         </footer>
     </main>
    
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500
+              
+            }
+        );
+      </script>
 </body>
 </html> 

@@ -17,10 +17,13 @@ body{
     height: 100vh;
 
 }
-
+.info{
+    animation-duration: 2s;
+}
 a{
     text-decoration: none;
 }
+
 .btn{
     display: inline-block;
     color: #FFFFFF;
